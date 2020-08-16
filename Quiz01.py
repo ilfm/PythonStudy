@@ -7,7 +7,8 @@
  
  예 ) 생성된 비밀먼호 : nav51!
 """
-url = "http://naver.com"
+# url = "http://naver.com"
+url = "http://daum.com"
 # http:// 제거
 url = url[7:]
     # 다른 방법
@@ -29,4 +30,4 @@ url = url[:3]
 
 password = url + str(wCount) + str(eCount) + "!"
 # !!! int 형 일때 str() 로 감싸주는것 주의하기
-print(password)
+print("{0}의 패스워드는 {1}입니다." .format(url,password))
